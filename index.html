@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>코리아여행사 COREATOUR — 전세버스 · 국내/국외여행</title>
+  <meta name="description" content="코리아여행사(원주) — 전세버스 예약, 국내/국외 단체·맞춤 여행, 항공권 상담. 공식 문의 033-764-1258 / corea08@hanmail.net" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-corporate">
+  <div class="theme-switch">
+    <label>Theme</label>
+    <select id="themeSelect">
+      <option value="theme-corporate">기업형</option>
+      <option value="theme-emotional">감성형</option>
+      <option value="theme-promo">활기형</option>
+    </select>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo.png" alt="코리아여행사 로고" onerror="this.style.display='none'">
+        <span class="brand-name">코리아여행사 COREATOUR</span>
+      </div>
+      <nav class="nav">
+        <a href="#services">서비스</a>
+        <a href="#buses">전세버스</a>
+        <a href="#contact">문의/예약</a>
+      </nav>
+      <div class="cta">
+        <a class="btn primary" href="tel:0337641258">033-764-1258</a>
+        <a class="btn ghost" href="mailto:corea08@hanmail.net">이메일</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>여행은 감동입니다.<br><span class="accent">코리아여행사</span>와 함께하세요.</h1>
+      <p class="hero-sub">전세버스 · 국내/국외 맞춤/단체여행 · 항공권 — 원스톱 상담/예약</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#contact">지금 예약 상담</a>
+        <a class="btn ghost" href="#services">서비스 보기</a>
+      </div>
+      <div class="hero-note">주소: 강원특별자치도 원주시 능라동길 51, 2F (무실동 롯데시네마) · 대표전화 033-764-1258</div>
+    </div>
+    <div class="hero-bg">
+      <img src="images/bg.jpg" alt="" onerror="this.style.display='none'">
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>우리의 서비스</h2>
+      <p class="section-sub">국외여행 · 국내여행 · 전세버스 예약까지 한 번에</p>
+      <div class="grid cards">
+        <article class="card">
+          <div class="card-icon">✈️</div>
+          <h3>국외여행</h3>
+          <p>패키지/맞춤/단체 기획. 대한항공/아시아나 등 항공권 연계 상담.</p>
+          <a class="link" href="#contact">견적 문의</a>
+        </article>
+        <article class="card">
+          <div class="card-icon">🏞️</div>
+          <h3>국내여행</h3>
+          <p>기관/학교/기업 행사 전용 맞춤 일정. 숙박·차량·식사 일괄 진행.</p>
+          <a class="link" href="#contact">일정 제안 받기</a>
+        </article>
+        <article class="card">
+          <div class="card-icon">🚌</div>
+          <h3>전세버스 예약</h3>
+          <p>워크숍/수학여행/공항송영/관광. 안전·정시·청결 3원칙 운영.</p>
+          <a class="link" href="#contact">배차 상담</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="buses" class="section alt">
+    <div class="container">
+      <h2>전세버스 안내</h2>
+      <p class="section-sub">대형/우등/리무진 — 행사 성격에 맞춰 배차합니다</p>
+      <div class="grid buses">
+        <figure class="bus">
+          <img src="images/bus.jpg" alt="전세버스" onerror="this.style.display='none'">
+          <figcaption>
+            <strong>대형 우등</strong>
+            <span>45인승 · 에어컨/USB · 안전벨트 전 좌석</span>
+          </figcaption>
+        </figure>
+        <figure class="bus">
+          <img src="images/landmark.jpg" alt="랜딩 이미지" onerror="this.style.display='none'">
+          <figcaption>
+            <strong>리무진</strong>
+            <span>VIP 의전/행사 전용 · 쾌적한 실내</span>
+          </figcaption>
+        </figure>
+        <figure class="bus">
+          <div class="bus-placeholder">CI 컬러 스킨</div>
+          <figcaption>
+            <strong>코리아여행사 스킨</strong>
+            <span>하늘색 + 흰/검 조합 · 랜드마크 아이콘</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>문의/예약</h2>
+      <p class="section-sub">빠르게 견적을 받아보세요. 기본정보만 입력하시면 연락드립니다.</p>
+
+      <form class="contact-form" onsubmit="return submitLead(event)">
+        <div class="grid form-grid">
+          <label class="field">
+            <span>성함</span>
+            <input required name="name" placeholder="홍길동" />
+          </label>
+          <label class="field">
+            <span>연락처</span>
+            <input required name="phone" placeholder="010-0000-0000" />
+          </label>
+          <label class="field">
+            <span>이메일</span>
+            <input name="email" type="email" placeholder="you@example.com" />
+          </label>
+          <label class="field">
+            <span>이용 구분</span>
+            <select name="type">
+              <option>전세버스</option>
+              <option>국내여행</option>
+              <option>국외여행</option>
+              <option>항공권</option>
+            </select>
+          </label>
+          <label class="field span-2">
+            <span>요청 사항</span>
+            <textarea name="memo" rows="4" placeholder="행사 일정/인원/출발지 등"></textarea>
+          </label>
+        </div>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">견적 요청</button>
+          <a class="btn ghost" href="tel:0337641258">전화 상담</a>
+          <a class="btn ghost" href="mailto:corea08@hanmail.net">이메일 상담</a>
+        </div>
+        <p class="small hint">※ 본 폼은 데모이며, 제출 시 화면에 확인 메시지만 표시됩니다. (실연동은 추후 API 연결)</p>
+      </form>
+
+      <div class="contact-cards">
+        <a class="mini-card" href="tel:0337641258">📞 대표전화<br><strong>033-764-1258</strong></a>
+        <a class="mini-card" href="mailto:corea08@hanmail.net">✉️ 이메일<br><strong>corea08@hanmail.net</strong></a>
+        <a class="mini-card" href="#" onclick="alert('카카오 채널 연동은 추후 연결합니다.'); return false;">💬 카카오 채널<br><strong>@코리아여행사</strong></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-name">코리아여행사 COREATOUR</div>
+          <div class="muted">강원특별자치도 원주시 능라동길 51, 2F (무실동 롯데시네마)</div>
+          <div class="muted">대표: 정해연 · 사업자 문의 033-764-1258</div>
+        </div>
+        <div class="right">
+          <div class="muted">© <span id="year"></span> COREATOUR. All rights reserved.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
